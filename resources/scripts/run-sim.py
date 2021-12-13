@@ -15,7 +15,7 @@ def parse_arguments():
     Parse and return the command line arguments.
     '''
     parser = argparse.ArgumentParser(description='Simulation config file')
-    parser.add_argument('-f', dest='CONFIG_FILE', required=True, help='Config file to read. Example: -t svn')
+    parser.add_argument('-f', dest='resources/test/config.xml', required=True, help='Config file to read. Example: -t svn')
     return parser.parse_args()
 
 def get_cmd_output(cmd, args):
@@ -34,16 +34,16 @@ def file_prefix(n,c,i):
 	return str(n) + "-" + str(c) + "-" + str(i)
 
 def build_simulation(nodes, cars, iteration):
-	print str(iteration) + ": Building simulation with " + nodes + " nodes, " + cars + " cars "
-	print get_cmd_output( "java", ["adasim.generator.Generator", "-N", nodes, "-C", cars, "-D", "4", "-o", file_prefix(nodes, cars, iteration) + ".xml",
+	print (str(iteration) + ": Building simulation with " + nodes + " nodes, " + cars + " cars ")
+	print (get_cmd_output( "java", ["adasim.generator.Generator", "-N", nodes, "-C", cars, "-D", "4", "-o", file_prefix(nodes, cars, iteration) + ".xml",
 		"-d", "3:6", "-S", "adasim.algorithm.routing.ShortestPathRoutingAlgorithm,adasim.algorithm.routing.TrafficLookaheadRoutingAlgorithm",
-		"--one-way-prob", "0.05" ] )
+		"--one-way-prob", "0.05" ] ))
 
 def run_simulation(nodes, cars, iteration):
-	print str(iteration) + ": Running simulation from " + file_prefix(nodes, cars, iteration) + ".xml"
+	print (str(iteration) + ": Running simulation from " + file_prefix(nodes, cars, iteration) + ".xml")
 	log = get_cmd_output( "java", ["adasim.TrafficMain", "-I", file_prefix(nodes, cars, iteration) + ".xml"])
 	out = open( file_prefix(nodes, cars, iteration) + ".log", "w")
-	out.write( log );
+	out.write( log )
 	out.close()
 
 def main(args):

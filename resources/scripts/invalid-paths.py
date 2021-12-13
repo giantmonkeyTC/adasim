@@ -20,6 +20,6 @@ for line in log.readlines():
 		n = 0
 		while( n < len(nodes) -1 ):
 			if ( n < len(nodes)-2 and math.fabs( int(nodes[n]) - int(nodes[n+1])) == 84 ):
-				print "INVALID PATH on line " + str(line_num) + ": " + result.group(1) + ": [" + nodes[n] + ", " + nodes[n+1] + "]"
+				print ("INVALID PATH on line " + str(line_num) + ": " + result.group(1) + ": [" + nodes[n] + ", " + nodes[n+1] + "]")
 				break
 			n = n+1

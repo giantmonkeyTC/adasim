@@ -43,10 +43,10 @@ def get_cmd_output(cmd, args):
 							stderr=subprocess.STDOUT).communicate()[0]
 
 def run_simulation(nodes, cars, iteration):
-	print str(iteration) + ": Running simulation from " + file_prefix(nodes, cars, iteration) + ".xml"
+	print (str(iteration) + ": Running simulation from " + file_prefix(nodes, cars, iteration) + ".xml")
 	log = get_cmd_output( "java", ["adasim.TrafficMain", "-I", file_prefix(nodes, cars, iteration) + ".xml"])
 	out = open( file_prefix(nodes, cars, iteration) + ".log", "w")
-	out.write( log );
+	out.write( log )
 	out.close()
 
 def process_path(line):
@@ -119,9 +119,9 @@ def filename_filter(files, regex):
 
 def process_files(dir, files, prefix):
 	cars = {}
-	print "Checking " + dir + "/" + prefix
+	print ("Checking " + dir + "/" + prefix)
 	for file in filename_filter( files, "(" + prefix + "-.+)\.xml"):
-		print "\t Processing " + file
+		print ("\t Processing " + file)
 		log_file = open( dir + "/" + file + ".log" )
 		xml_file = open( dir + "/" + file + ".xml" )
 		cars = process_log(log_file, file, cars)

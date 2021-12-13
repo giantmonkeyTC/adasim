@@ -9,12 +9,12 @@ import sys
 import re
 import os
 
-print sys.argv[0]
+print (sys.argv[0])
 
 stopped = open(sys.argv[1])
 
 for s in stopped.readlines():
 	result = re.search("STOP: Car: (\d+)", s) 	
 	if ( result ) :
-		print "sed -i -e '/Car: " + result.group(1) + " /d' test.log"
+		print ("sed -i -e '/Car: " + result.group(1) + " /d' test.log")
 		os.system( "sed -i -e '/Car: " + result.group(1) + " /d' test.log")
