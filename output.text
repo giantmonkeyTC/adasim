@@ -1,0 +1,789 @@
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00  89.99  -1.00  -1.00  65.59  -1.00
+From state 7:   65.61  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00 100.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 5
+From state 2 goto state 2
+From state 3 goto state 1
+From state 4 goto state 6
+From state 5 goto state 2
+From state 6 goto state 5
+From state 7 goto state 1
+From state 8 goto state 3
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:1
+	 	Neighbors: [5]
+	Segment ID:5
+	 	Neighbors: [0, 2, 9]
+	Segment ID:2
+	 	Neighbors: [4, 7, 9]
+=======================================================
+223 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - PATH: Vehicle: 5 From: 3 To: 2 Path: [1, 5, 2]
+223 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 5 At: 3 To: 1
+223 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 5 At: 3
+223 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 1 At: 4, carType:0
+224 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 8, carType:0
+224 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 2
+224 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 5 At: 1, carType:1
+224 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 5 At: 1, carType:1
+========================Source: 5, Target: 2===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1   0  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1   0  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1 100  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1 100  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00  72.89  -1.00  -1.00  72.90  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00   0.00  -1.00   0.00
+From state 3:   -1.00  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  80.99  -1.00  65.61  -1.00
+From state 5:   65.61  -1.00 100.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  90.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00  90.00  -1.00  -1.00  65.59  -1.00
+From state 7:   65.61  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00 100.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 5
+From state 2 goto state 2
+From state 3 goto state 1
+From state 4 goto state 6
+From state 5 goto state 2
+From state 6 goto state 5
+From state 7 goto state 1
+From state 8 goto state 3
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:2
+	 	Neighbors: [4, 7, 9]
+=======================================================
+249 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - UPDATE: PATH: Vehicle: 5 From: 3 To: 2 Path: [2]
+249 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 5 At: 1 To: 5
+249 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 5 At: 1
+249 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 0 At: 3, carType:0
+249 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 2 At: 3, carType:0
+249 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 3, carType:0
+250 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 1 At: 4, carType:0
+250 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 1 At: 4, carType:0
+========================Source: 4, Target: 7===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1 100  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1 100  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00  65.61  -1.00  -1.00 100.00  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00  65.61  -1.00  -1.00 100.00  -1.00  81.00
+From state 3:   -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  72.90  -1.00  59.05  -1.00
+From state 5:   90.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  81.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  59.05  -1.00
+From state 7:    0.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  65.61  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 5
+From state 2 goto state 7
+From state 3 goto state 1
+From state 4 goto state 6
+From state 5 goto state 0
+From state 6 goto state 5
+From state 7 goto state 7
+From state 8 goto state 3
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:6
+	 	Neighbors: [5, 8]
+	Segment ID:5
+	 	Neighbors: [0, 2, 9]
+	Segment ID:0
+	 	Neighbors: [4, 7]
+	Segment ID:7
+	 	Neighbors: [0, 1]
+=======================================================
+301 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - PATH: Vehicle: 1 From: 4 To: 7 Path: [6, 5, 0, 7]
+301 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 1 At: 4 To: 6
+301 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 1 At: 4
+301 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 5 At: 5, carType:1
+301 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 5 At: 5, carType:1
+301 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 5 At: 5 To: 2
+302 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 5 At: 5
+302 [main] INFO adasim.model.Vehicle  - STOP: Vehicle: 5 At: 2
+302 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 1 At: 6, carType:0
+302 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 8, carType:0
+302 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 3 At: 8, carType:0
+========================Source: 8, Target: 4===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1 100  -1  -1   0  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1 100  -1  -1   0  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00 100.00  -1.00  -1.00  81.00  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00 100.00  -1.00  -1.00  81.00  -1.00  81.00
+From state 3:   -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00   0.00  -1.00
+From state 5:   90.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  81.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00   0.00  -1.00
+From state 7:   90.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  65.61  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 4
+From state 1 goto state 5
+From state 2 goto state 4
+From state 3 goto state 1
+From state 4 goto state 4
+From state 5 goto state 0
+From state 6 goto state 6
+From state 7 goto state 0
+From state 8 goto state 3
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:3
+	 	Neighbors: [1]
+	Segment ID:1
+	 	Neighbors: [5]
+	Segment ID:5
+	 	Neighbors: [0, 2, 9]
+	Segment ID:0
+	 	Neighbors: [4, 7]
+	Segment ID:4
+	 	Neighbors: [6, 8]
+=======================================================
+335 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - PATH: Vehicle: 3 From: 8 To: 4 Path: [3, 1, 5, 0, 4]
+335 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 3 At: 8 To: 3
+335 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 3 At: 8
+335 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 3
+335 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 0 At: 3, carType:0
+335 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 2 At: 3, carType:0
+335 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 3, carType:0
+335 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 3, carType:0
+335 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 0 At: 3, carType:0
+========================Source: 3, Target: 2===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1   0  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1   0  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1 100  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1 100  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00  72.72  -1.00  -1.00  72.90  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00   0.00  -1.00   0.00
+From state 3:   -1.00  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  80.84  -1.00  65.61  -1.00
+From state 5:   65.61  -1.00 100.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  90.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00  89.90  -1.00  -1.00  65.57  -1.00
+From state 7:   65.61  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00 100.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 5
+From state 2 goto state 2
+From state 3 goto state 1
+From state 4 goto state 6
+From state 5 goto state 2
+From state 6 goto state 5
+From state 7 goto state 1
+From state 8 goto state 3
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:1
+	 	Neighbors: [5]
+	Segment ID:5
+	 	Neighbors: [0, 2, 9]
+	Segment ID:2
+	 	Neighbors: [4, 7, 9]
+=======================================================
+359 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - PATH: Vehicle: 0 From: 3 To: 2 Path: [1, 5, 2]
+359 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 0 At: 3 To: 1
+359 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 0 At: 3
+359 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 1 At: 6, carType:0
+359 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 1 At: 6, carType:0
+========================Source: 5, Target: 7===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1 100  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1 100  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00  65.61  -1.00  -1.00 100.00  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00  65.61  -1.00  -1.00 100.00  -1.00  81.00
+From state 3:   -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  72.90  -1.00  59.05  -1.00
+From state 5:   90.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  81.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  59.05  -1.00
+From state 7:    0.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  65.61  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 5
+From state 2 goto state 7
+From state 3 goto state 1
+From state 4 goto state 6
+From state 5 goto state 0
+From state 6 goto state 5
+From state 7 goto state 7
+From state 8 goto state 3
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:0
+	 	Neighbors: [4, 7]
+	Segment ID:7
+	 	Neighbors: [0, 1]
+=======================================================
+385 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - UPDATE: PATH: Vehicle: 1 From: 4 To: 7 Path: [0, 7]
+385 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 1 At: 6 To: 5
+385 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 1 At: 6
+386 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 4
+386 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 0 At: 1, carType:0
+386 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 2 At: 3, carType:0
+386 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 3, carType:0
+387 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 3, carType:0
+388 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 2 At: 3, carType:0
+========================Source: 3, Target: 9===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1   0  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1   0  -1 100]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1 100]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00  72.90  -1.00  -1.00  72.90  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00  72.90  -1.00  -1.00  72.90  -1.00 100.00
+From state 3:   -1.00  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  65.61  -1.00
+From state 5:   65.61  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00 100.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00  90.00  -1.00  -1.00  65.61  -1.00
+From state 7:   65.61  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 5
+From state 2 goto state 9
+From state 3 goto state 1
+From state 4 goto state 6
+From state 5 goto state 9
+From state 6 goto state 5
+From state 7 goto state 1
+From state 8 goto state 3
+From state 9 goto state 9
+
+RoadSegments:
+	Segment ID:1
+	 	Neighbors: [5]
+	Segment ID:5
+	 	Neighbors: [0, 2, 9]
+	Segment ID:9
+	 	Neighbors: [2]
+=======================================================
+402 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - PATH: Vehicle: 2 From: 3 To: 9 Path: [1, 5, 9]
+402 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 2 At: 3 To: 1
+402 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 2 At: 3
+402 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 1 At: 5, carType:0
+402 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 5
+402 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 0 At: 1, carType:0
+402 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 2 At: 1, carType:0
+402 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 0 At: 1, carType:0
+========================Source: 5, Target: 2===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1   0  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1   0  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1 100  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1 100  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00  72.88  -1.00  -1.00  72.90  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00   0.00  -1.00   0.00
+From state 3:   -1.00  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  80.99  -1.00  65.61  -1.00
+From state 5:   65.61  -1.00 100.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  90.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00  90.00  -1.00  -1.00  65.44  -1.00
+From state 7:   65.61  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00 100.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 5
+From state 2 goto state 2
+From state 3 goto state 1
+From state 4 goto state 6
+From state 5 goto state 2
+From state 6 goto state 5
+From state 7 goto state 1
+From state 8 goto state 3
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:2
+	 	Neighbors: [4, 7, 9]
+=======================================================
+410 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - UPDATE: PATH: Vehicle: 0 From: 3 To: 2 Path: [2]
+410 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 0 At: 1 To: 5
+410 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 0 At: 1
+410 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 3, carType:0
+410 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 3, carType:0
+410 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 4 At: 3, carType:0
+========================Source: 3, Target: 7===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1 100  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1 100  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00  65.61  -1.00  -1.00 100.00  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00  65.61  -1.00  -1.00 100.00  -1.00  81.00
+From state 3:   -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  72.90  -1.00  59.05  -1.00
+From state 5:   90.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  81.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  59.05  -1.00
+From state 7:    0.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  65.61  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 5
+From state 2 goto state 7
+From state 3 goto state 1
+From state 4 goto state 6
+From state 5 goto state 0
+From state 6 goto state 5
+From state 7 goto state 7
+From state 8 goto state 3
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:1
+	 	Neighbors: [5]
+	Segment ID:5
+	 	Neighbors: [0, 2, 9]
+	Segment ID:0
+	 	Neighbors: [4, 7]
+	Segment ID:7
+	 	Neighbors: [0, 1]
+=======================================================
+423 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - PATH: Vehicle: 4 From: 3 To: 7 Path: [1, 5, 0, 7]
+423 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 4 At: 3 To: 1
+423 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 4 At: 3
+424 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 1 At: 5, carType:0
+424 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 0 At: 5, carType:0
+424 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 1 At: 5, carType:0
+424 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 1 At: 5 To: 0
+424 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 1 At: 5
+424 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 6
+424 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 1 At: 0, carType:0
+424 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 2 At: 1, carType:0
+424 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 1, carType:0
+424 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 3, carType:0
+424 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 0 At: 5, carType:0
+424 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 7
+424 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 1 At: 0, carType:0
+424 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 1 At: 0, carType:0
+========================Source: 7, Target: 7===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1 100  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1 100  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00 100.00  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00 100.00  -1.00   0.00
+From state 3:   -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00   0.00  -1.00
+From state 5:    0.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00   0.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00   0.00  -1.00
+From state 7:    0.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 1
+From state 2 goto state 7
+From state 3 goto state 3
+From state 4 goto state 4
+From state 5 goto state 5
+From state 6 goto state 6
+From state 7 goto state 7
+From state 8 goto state 8
+From state 9 goto state 9
+
+RoadSegments:
+	Segment ID:7
+	 	Neighbors: [0, 1]
+=======================================================
+430 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - UPDATE: PATH: Vehicle: 1 From: 4 To: 7 Path: [7]
+430 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 1 At: 0 To: 7
+430 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 1 At: 0
+430 [main] INFO adasim.model.Vehicle  - STOP: Vehicle: 1 At: 7
+430 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 2 At: 1, carType:0
+430 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 1, carType:0
+431 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 2 At: 1, carType:0
+========================Source: 5, Target: 9===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1   0  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1   0  -1 100]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1 100]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00  72.90  -1.00  -1.00  72.90  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00  72.90  -1.00  -1.00  72.90  -1.00 100.00
+From state 3:   -1.00  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  65.61  -1.00
+From state 5:   65.61  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00 100.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00  90.00  -1.00  -1.00  65.61  -1.00
+From state 7:   65.61  81.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 5
+From state 2 goto state 9
+From state 3 goto state 1
+From state 4 goto state 6
+From state 5 goto state 9
+From state 6 goto state 5
+From state 7 goto state 1
+From state 8 goto state 3
+From state 9 goto state 9
+
+RoadSegments:
+	Segment ID:9
+	 	Neighbors: [2]
+=======================================================
+438 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - UPDATE: PATH: Vehicle: 2 From: 3 To: 9 Path: [9]
+438 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 2 At: 1 To: 5
+438 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 2 At: 1
+438 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 3, carType:0
+439 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 3 At: 3, carType:0
+========================Source: 1, Target: 4===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1 100  -1  -1   0  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1 100  -1  -1   0  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00 100.00  -1.00  -1.00  81.00  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00 100.00  -1.00  -1.00  81.00  -1.00  81.00
+From state 3:   -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00   0.00  -1.00
+From state 5:   90.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  81.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00   0.00  -1.00
+From state 7:   90.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 4
+From state 1 goto state 5
+From state 2 goto state 4
+From state 3 goto state 3
+From state 4 goto state 4
+From state 5 goto state 0
+From state 6 goto state 6
+From state 7 goto state 0
+From state 8 goto state 8
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:5
+	 	Neighbors: [0, 2, 9]
+	Segment ID:0
+	 	Neighbors: [4, 7]
+	Segment ID:4
+	 	Neighbors: [6, 8]
+=======================================================
+450 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - UPDATE: PATH: Vehicle: 3 From: 8 To: 4 Path: [5, 0, 4]
+450 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 3 At: 3 To: 1
+450 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 3 At: 3
+450 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 0 At: 5, carType:0
+450 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 2 At: 5, carType:0
+450 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 0 At: 5, carType:0
+450 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 0 At: 5 To: 2
+450 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 0 At: 5
+451 [main] INFO adasim.model.Vehicle  - STOP: Vehicle: 0 At: 2
+451 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 8
+451 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 1, carType:0
+451 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 1, carType:0
+451 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 4 At: 1, carType:0
+========================Source: 5, Target: 7===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1 100  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1 100  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00  65.61  -1.00  -1.00 100.00  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00  65.61  -1.00  -1.00 100.00  -1.00  81.00
+From state 3:   -1.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  72.90  -1.00  59.05  -1.00
+From state 5:   90.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  81.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  59.05  -1.00
+From state 7:    0.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00  65.61  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 5
+From state 2 goto state 7
+From state 3 goto state 1
+From state 4 goto state 6
+From state 5 goto state 0
+From state 6 goto state 5
+From state 7 goto state 7
+From state 8 goto state 3
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:0
+	 	Neighbors: [4, 7]
+	Segment ID:7
+	 	Neighbors: [0, 1]
+=======================================================
+463 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - UPDATE: PATH: Vehicle: 4 From: 3 To: 7 Path: [0, 7]
+463 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 4 At: 1 To: 5
+463 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 4 At: 1
+463 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 2 At: 5, carType:0
+463 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 5, carType:0
+463 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 9
+463 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 1, carType:0
+464 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 2 At: 5, carType:0
+464 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 5, carType:0
+464 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 2 At: 5, carType:0
+464 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 2 At: 5 To: 9
+464 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 2 At: 5
+464 [main] INFO adasim.model.Vehicle  - STOP: Vehicle: 2 At: 9
+464 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 10
+464 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 1, carType:0
+464 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 3 At: 1, carType:0
+464 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 3 At: 1 To: 5
+464 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 3 At: 1
+464 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 5, carType:0
+464 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 5, carType:0
+464 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 4 At: 5, carType:0
+465 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 4 At: 5 To: 0
+465 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 4 At: 5
+465 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 11
+465 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 0, carType:0
+465 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 5, carType:0
+465 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 12
+465 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 4 At: 0, carType:0
+465 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 4 At: 0, carType:0
+========================Source: 7, Target: 7===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1   0  -1  -1 100  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1   0  -1  -1 100  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00 100.00  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00 100.00  -1.00   0.00
+From state 3:   -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00   0.00  -1.00
+From state 5:    0.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00   0.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00   0.00  -1.00
+From state 7:    0.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 7
+From state 1 goto state 1
+From state 2 goto state 7
+From state 3 goto state 3
+From state 4 goto state 4
+From state 5 goto state 5
+From state 6 goto state 6
+From state 7 goto state 7
+From state 8 goto state 8
+From state 9 goto state 9
+
+RoadSegments:
+	Segment ID:7
+	 	Neighbors: [0, 1]
+=======================================================
+473 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - UPDATE: PATH: Vehicle: 4 From: 3 To: 7 Path: [7]
+473 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 4 At: 0 To: 7
+473 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 4 At: 0
+473 [main] INFO adasim.model.Vehicle  - STOP: Vehicle: 4 At: 7
+473 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 5, carType:0
+473 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 3 At: 5, carType:0
+========================Source: 0, Target: 4===============================
+                 States:    0   1   2   3   4   5   6   7   8   9
+Possible states from 0 :[  -1  -1  -1  -1 100  -1  -1   0  -1  -1]
+Possible states from 1 :[  -1  -1  -1  -1  -1   0  -1  -1  -1  -1]
+Possible states from 2 :[  -1  -1  -1  -1 100  -1  -1   0  -1   0]
+Possible states from 3 :[  -1   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 4 :[  -1  -1  -1  -1  -1  -1   0  -1   0  -1]
+Possible states from 5 :[   0  -1   0  -1  -1  -1  -1  -1  -1   0]
+Possible states from 6 :[  -1  -1  -1  -1  -1   0  -1  -1   0  -1]
+Possible states from 7 :[   0   0  -1  -1  -1  -1  -1  -1  -1  -1]
+Possible states from 8 :[  -1  -1  -1   0  -1  -1  -1  -1  -1  -1]
+Possible states from 9 :[  -1  -1   0  -1  -1  -1  -1  -1  -1  -1]
+
+Q matrix
+From state 0:   -1.00  -1.00  -1.00  -1.00 100.00  -1.00  -1.00  81.00  -1.00  -1.00
+From state 1:   -1.00  -1.00  -1.00  -1.00  -1.00  81.00  -1.00  -1.00  -1.00  -1.00
+From state 2:   -1.00  -1.00  -1.00  -1.00 100.00  -1.00  -1.00  81.00  -1.00  81.00
+From state 3:   -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 4:   -1.00  -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00   0.00  -1.00
+From state 5:   90.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  81.00
+From state 6:   -1.00  -1.00  -1.00  -1.00  -1.00   0.00  -1.00  -1.00   0.00  -1.00
+From state 7:   90.00  72.90  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 8:   -1.00  -1.00  -1.00   0.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+From state 9:   -1.00  -1.00  90.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00  -1.00
+
+Print policy
+From state 0 goto state 4
+From state 1 goto state 5
+From state 2 goto state 4
+From state 3 goto state 3
+From state 4 goto state 4
+From state 5 goto state 0
+From state 6 goto state 6
+From state 7 goto state 0
+From state 8 goto state 8
+From state 9 goto state 2
+
+RoadSegments:
+	Segment ID:4
+	 	Neighbors: [6, 8]
+=======================================================
+483 [main] INFO adasim.algorithm.routing.LookaheadShortestPathRoutingAlgorithm  - UPDATE: PATH: Vehicle: 3 From: 8 To: 4 Path: [4]
+483 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 3 At: 5 To: 0
+483 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 3 At: 5
+483 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 13
+483 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 0, carType:0
+484 [main] INFO adasim.model.TrafficSimulator  - SIMULATION: Cycle: 14
+484 [main] INFO adasim.model.RoadSegment  - ================> Option Vehicle: 3 At: 0, carType:0
+484 [main] INFO adasim.model.RoadSegment  - ================> selected Vehicle: 3 At: 0, carType:0
+484 [main] INFO adasim.model.Vehicle  - MOVE: Vehicle: 3 At: 0 To: 4
+484 [main] INFO adasim.model.RoadSegment  - ENTER: Vehicle: 3 At: 0
+484 [main] INFO adasim.model.Vehicle  - STOP: Vehicle: 3 At: 4
+484 [main] INFO adasim.TrafficMain  - Stopping simulation
+488 [main] INFO adasim.TrafficMain  - To view visual map  open visual/index.html
